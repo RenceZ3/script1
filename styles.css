@@ -1,0 +1,84 @@
+body {
+    background-color:  #F9F5E7;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #A7727D;
+}
+
+button {
+    margin-right: 10px;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+.details {
+    padding: 1.2em;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    margin: 0 30px;
+    text-align: right;
+}
+
+input,  .areaCompute {
+    margin: 10px;
+}
+
+.label-guide {
+    text-align: left;
+}
+
+.rectangle-area {
+    border: 2px solid #000;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.grid-margin {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form-section {
+    padding: 10px;
+}
+
+#area-length {
+    position: absolute;
+}
+
+#area-width {
+    text-align: center;
+}
+
+#peri-length {
+    position: absolute;
+}
+
+#peri-width {
+    text-align: center;
+    position: absolute;
+    margin-top: -2rem;
+}
+
+#area-result {
+    margin: 0px;
+}
+
+#peri-result {
+    display: flex;
+    color: green;
+}

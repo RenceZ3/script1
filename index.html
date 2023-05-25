@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="details">
+        <h1 class="greetHeader">Hello <span id="personName"></span>!</h1>
+        <!-- <button class="btn-default hidden">Try Again?</button> -->
+        <h3>Details: </h3>
+        <strong>Address: </strong> <span id="address"></span>
+        <br>
+        <strong>Phone Number: </strong> <span id="phoneNumber"></span>
+        <br>
+        <strong>City: </strong> <span id="city"></span>
+    </div>
+
+    <hr>
+
+    <h3>Compute for Area and Perimeter of a Rectangle</h3>
+
+    <div class="rectangleComp grid-container">
+
+        <div class="grid-item">
+            <h4 class="label-guide">For Area: </h4>
+
+            <label for="">Length: </label>
+            <input type="number" name="length" id="length">
+            <br>
+            <label for="Width">Width: </label>
+            <input type="number" name="width" id="width">
+            <br>
+            <button type="submit" id="areaCompute" onclick="computeArea()">Compute</button>
+        </div>
+        <div class="grid-item grid-margin">
+            <p id="area-width"></p>
+            <p id="area-length"></p>
+
+            <div class="rectangle-area" id="rectangle-shape">
+                <p id="area-result"></p>
+            </div>
+        </div>
+
+
+        <div class="grid-item">
+            <h4 class="label-guide">For Perimeter: </h4>
+
+            <label for="">Length: </label>
+            <input type="number" name="length2" id="length2">
+            <br>
+            <label for="Width">Width: </label>
+            <input type="number" name="width2" id="width2">
+            <br>
+            <button type="submit" id="areaCompute" onclick="computePerimeter()">Compute</button>
+
+            <p id="peri-result"></p>
+
+        </div>
+        <div class="grid-item grid-margin">
+            <p id="peri-width"></p>
+            <p id="peri-length"></p>
+
+            <div class="rectangle-area" id="rectangle-peri">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <h3>Simple Interest Calculator</h3>
+
+    <div class="grid-container interest-section">
+
+
+        <div class="grid-item">
+            <em>A = P(1 + rt)</em>
+
+            <br>
+            <label for="principal">Principal <em>(P)</em> </label>
+            <input type="number" name="principal" id="principal">
+            <br>
+            <label for="rate">Rate % <em>(r)</em></label>
+            <input type="number" name="rate" id="rate">
+            <br>
+            <label for="time">Time <em>(t)</em></label>
+            <input type="number" name="time" id="time" placeholder="years">
+            <br>
+            <button onclick="simpleInterestCalc()">Calculate</button>
+        </div>
+
+        <div class="grid-item" id="hidden">
+            <h4 class="label-guide" >Calculation...</h4>
+            <p>Converting <span id="calcRate"></span> to percentage => <span id="rateRes"></span></p>
+            <p>Multiplying rate to time and adding 1 => <span id="rateTIme"></span></p>
+            <p>Getting the simple interest by Multiplying Principal: <strong id="interestSol"></strong></p>
+            <p></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
